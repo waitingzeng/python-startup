@@ -103,7 +103,7 @@ del editorbase
 
 # The place to store your command history between sessions
 histfile = os.path.join(user_dir, ".python_history")
-if not os.path.exists(hisfile):
+if not os.path.exists(histfile):
     f = file(histfile, 'a')
     f.close()
 
