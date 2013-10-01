@@ -79,6 +79,8 @@ except ImportError:
 
 home = os.path.expandvars('$HOME')
 user_dir = os.path.join(home, os.environ.get("PYTHONUSERDIR", ".python"))
+if not os.path.exists(user_dir):
+    os.makedirs(user_dir)
 sys.path.append(user_dir)
 
 ##### Some settings you may want to change #####
